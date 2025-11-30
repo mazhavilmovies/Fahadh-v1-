@@ -3,16 +3,16 @@ from os import path, getenv
 import os, time 
 
 class Config:
-    API_ID = int(getenv("API_ID", "15584001"))
-    API_HASH = getenv("API_HASH", "e12f1473abbeaaf8302bf2692efd98f6")
-    BOT_TOKEN = getenv("BOT_TOKEN", "")
+    API_ID = int(getenv("API_ID", "21419016"))
+    API_HASH = getenv("API_HASH", "79198e1eb4cfd0f771a89d83b9144e7e")
+    BOT_TOKEN = getenv("BOT_TOKEN", "8499555813:AAEyOwXxdWe3FFcnHrRhavKgZMc0aCTvkZ0")
  
-    ADMIN = list(map(int, getenv("ADMIN", "7425490417 1509123054").split()))
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002276401285"))
+    ADMIN = list(map(int, getenv("ADMIN", "1933114137").split()))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002833936259"))
     
     # database configs
-    DB_URL = os.environ.get("DB_URL", "")
-    DB_NAME = os.environ.get("DB_NAME", "")
+    DB_URL = os.environ.get("DB_URL", "mongodb+srv://kentkouhali5l_db_user:gFvGsyASnQPu9rDZ@cluster0.m9xgtlr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    DB_NAME = os.environ.get("DB_NAME", "mangodb")
     
     #web response 
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
