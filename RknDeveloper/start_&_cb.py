@@ -20,10 +20,16 @@ async def accept_request(bot, r):
     ]])
     
     try:
+        add_group(m.chat.id)
         await bot.send_message(
-            r.from_user.id,
-            f"**𝖧𝖾𝗅𝗅𝗈 {r.from_user.mention} 👻\n\n 𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 {r.chat.title} 𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖠𝗉𝗉𝗋𝗈𝗏𝖾𝖽.\n\nSend /start to know more**",
-            reply_markup=rm)
+            dp1.LOG_CHANNEL,
+            f"**--#NᴇᴡGʀᴏᴜᴘ--**\n\nCʜᴀɴɴᴇʟ & Gʀᴏᴜᴘ Iᴅ: {m.chat.id}\nTɪᴛʟᴇ: `{m.chat.title}`\nUɴ: @{m.chat.username}\n\nBʏ: {m.from_user.mention}"
+        )
+        await bot.approve_chat_join_request(op.id, kk.id)
+        await bot.send_message(m.from_user.t, "**𝖧𝖾𝗅𝗅𝗈 {} 👻\nWelcome To {} 𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖠𝗉𝗉𝗋𝗈𝗏𝖾𝖽.\n\nSend /start to know more**".format(m.from_user.mention, m.chat.title))
+        reply_markup=InlineKeyboardMarkup([[
+        InlineKeyboardButton("💥 NEW MOVIES 💥", url=f"https://t.me/+K4sUvdM_4eo3Zjg1")
+        ]])
                         
     except UserIsBlocked:
         print("User blocked the bot")
