@@ -14,9 +14,9 @@ import random, asyncio, os
 async def accept_request(bot, r):
 
     rm = InlineKeyboardMarkup([[
-        InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀɴɴᴇʟ ࿇", url=f"https://t.me/{bot.username}?startchannel=Bots4Sale&admin=invite_users+manage_chat")
+        InlineKeyboardButton("💥 Uᴘᴅᴀᴛᴇ 💥", url="https://t.me/+K4sUvdM_4eo3Zjg1")
         ],[
-        InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ࿇", url=f"https://t.me/{bot.username}?startgroup=Bots4Sale&admin=invite_users+manage_chat")     
+        InlineKeyboardButton("🔎 Sᴜᴘᴘᴏʀᴛ 🔍", url="https://t.me/+1yViCV2YqbVhMGI1")     
     ]])
     
     try:
